@@ -1,0 +1,14 @@
+CREATE DATABASE meu_primeiro_banco;
+USE meu_primeiro_banco;
+
+CREATE TABLE clientes (
+	id INT, 
+    nome VARCHAR (40),
+    esta_ativo BOOLEAN
+);
+
+ALTER TABLE clientes
+ADD COLUMN endereco VARCHAR (100);
+
+DROP TABLE clientes;
+DROP DATABASE meu_primeiro_banco;
